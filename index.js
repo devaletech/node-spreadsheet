@@ -35,8 +35,6 @@ async function getAuthSheets(){
     };
 }
 
-app.listen(3001, () => console.log("Porta para teste no insomnia => [3001]"));
-
 app.get("/metadata", async (req,res)=> {
     const {googleSheets, auth, spreadsheetId } = await getAuthSheets();
 
