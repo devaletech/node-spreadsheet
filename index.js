@@ -87,6 +87,10 @@ app.post('/submitForm', async (req, res) => {
     }
 });
 
+app.listen(process.env.PORT, () => {
+    console.log(`Servidor rodando na porta ${process.env.PORT}`);
+});
+
 //   app.post("/updateValue", async (req, res) => {
 //     const { googleSheets, auth, spreadsheetId } = await getAuthSheets();
   
