@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 async function getAuthSheets(){
     const auth = new google.auth.GoogleAuth({
         scopes: "https://www.googleapis.com/auth/spreadsheets",
-        keyFile: '/etc/secrets/credentials.json'
+        keyFile: 'credentials.json'
     })
 
     const client = await auth.getClient();
